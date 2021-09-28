@@ -1,0 +1,13 @@
+doctype html
+html
+  head
+    title My Site - #{title}
+    link(rel="stylesheet", href="/assets/scss/main.scss")
+  body
+    block header
+      include /components/header.pug
+    block content
+    block footer
+      include ./../components/footer.pug
+    block scripts
+      script(src='/scripts/main.js')
