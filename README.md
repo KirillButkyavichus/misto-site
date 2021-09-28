@@ -2,8 +2,11 @@
 `npm i`
 
 # Запуск development сервера
-`npm run dev`
+`npm run dev` - сервер запускается на http://localhost:1234/
 
+# Примкер того, как открыть нужную страницу сайта
+http://localhost:1234/index.html  
+http://localhost:1234/another.html
 # Структура проекта
 
 ```
@@ -17,3 +20,7 @@ src - исходный код проект
   index.pug - индексный файл 
   another.pug - another страница сайта 
 ```
+
+# Используемые препроцессоры
+- [Pug.js](https://pugjs.org/api/getting-started.html) - препроцессор для html
+- [Scss](https://sass-lang.com/documentation) - препроцессор для css
