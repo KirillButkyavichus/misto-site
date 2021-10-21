@@ -199,13 +199,48 @@ body {
 
 // MAIN
 
+.border-info {
+  border:2px solid #F8F8F8;
+}
+
 .section-info {
+  padding-top: 32px;
   display: grid;
   gap: 30px;
   grid-template-areas:
   "main-card second-card third-card " 
   "main-card last-card last-card";
   &__card {
+    position: relative;
+    &-title {
+      padding: 13px 24px;
+    }
+    &_main-label {
+      padding: 24px 32px;
+      text-align: center;
+    }
+    &_main-subetitle {
+      opacity: 0.4;
+      line-height: 13px;
+      font-size: 12px;
+      margin-bottom:14px;    
+    }
+    &_main-title {
+      line-height: 25px;
+      font-size: 22px;
+      letter-spacing:0.06em;
+    }
+    &-label {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-color: #ffffff;
+      border-radius: 4px;
+      font-weight: 600;
+      letter-spacing:0.06em;
+      width: max-content;
+    }
     &:nth-child(2){
       grid-area:second-card;
     }
@@ -220,3 +255,66 @@ body {
     }
   }
 } 
+
+.section-support {
+  padding-top: 32px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  &__card {
+    display: flex;
+    align-items: center;
+    &-wrapper {
+      flex-direction: column;
+    }
+    &-img {
+      margin-right: 8px;
+      opacity: 0.8;
+    }
+    &-title {
+      font-size: 12px;
+      line-height: 13px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      padding-bottom: 4px;
+    }
+    &-subetitle {
+      font-size: 12px;
+      line-height: 22px;
+      font-weight: 500;
+      opacity: 0.9;
+    }
+  }
+}
+
+.section-women {
+  padding: 94px 0;
+  margin-bottom: 48px;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    &-title {
+      font-size: 22px;
+      line-height: 25px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+    }
+    &-list {
+      display: grid;
+      grid-auto-flow: column;
+      gap:32px;
+      letter-spacing: 0.06em;
+      line-height: 13px;
+      font-size: 12px;
+      font-weight: 400;
+      color: #949494;
+      
+      & a:hover {
+      font-weight: 500;
+      color: #121212;
+      }
+    }
+  }
+}
