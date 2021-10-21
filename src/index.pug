@@ -1,13 +1,57 @@
 extends ./layouts/default.pug
 
 block content
+  .border-info 
   .container
     .section.section-info 
       .section-info__card
         img(src="assets/img/title.jpg",alt="",)
+        .section-info__card-label.section-info__card_main-label
+          .section-info__card_main-subetitle BANNER 
+          .section-info__card_main-title YOUR TITLE TEXT 
       .section-info__card
         img(src="./assets/img/women.jpg",alt="")
+        .section-info__card-label 
+          .section-info__card-title WOMEN 
       .section-info__card  
         img(src="./assets/img/men.jpg",alt="")
+        .section-info__card-label 
+          .section-info__card-title MEN 
       .section-info__card  
         img(src="./assets/img/accessories.jpg",alt="")
+        .section-info__card-label 
+          .section-info__card-title ACCESSORIES
+    .section-support 
+      .section-support__card
+        img(class="section-support__card-img" src="./assets/img/truck 1.svg", alt="alt")
+        .section-support__card-wrapper 
+          p.section-support__card-title FREE SHIPPING 
+          p.section-support__card-subetitle On all UA order or order above $100
+      .section-support__card
+        img(class="section-support__card-img" src="./assets/img/refresh 1.svg", alt="alt")
+        .section-support__card-wrapper
+          p.section-support__card-title 30 DAYS RETURN 
+          p.section-support__card-subetitle Simply return it within 30 days for an exchange
+      .section-support__card
+        img(class="section-support__card-img" src="./assets/img/support 1.svg", alt="alt")
+        .section-support__card-wrapper  
+          p.section-support__card-title SUPPORT 24/7
+          p.section-support__card-subetitle Contact us 24 hours a day, 7 days a week 
+  .border-info
+  .container 
+    .section.section-women  
+      .section-women__nav
+        .section-women__nav-title WOMEN’S
+        ul.section-women__nav-list
+          li 
+            a(href="#") NEW ARRIVALS
+          li 
+            a(href="#") SPECIALS
+          li 
+            a(href="#") BESTSELLERS
+          li 
+            a(href="#") MOST VIEWED
+          li 
+            a(href="#") FEATURED PRODUCTS
+
+
