@@ -1,7 +1,360 @@
 extends ./layouts/default.pug
 
 block content
-  span
-    | Another page
-  br
-  a(href="/index.pug") index page
+  section.sections-categories
+    .container 
+      .categories-top 
+        .categories-top__breadcrumbs
+          .categories-top__breadcrumbs-text Home
+          img(src="./assets/img/►.svg", alt="")
+          span Women
+        .categories-top__share
+          img(class="categories-top__share-img" src="./assets/img/share.svg", alt="")
+          span Share 
+      .categories-title Women
+  .container   
+    .main-filter
+      .main-filter__panel
+        .main-filter__label
+          .main-filter__label-icon
+            img(class="main-filter__label-close" src="./assets/img/close.svg", alt="")
+            img(class="main-filter__label-open" src="./assets/img/filter.svg", alt="") 
+          span Filter
+        .main-filter__view
+          img(class="main-filter__view-list" src="./assets/img/view-list.svg", alt="")
+          img(class="main-filter__view-grid" src="./assets/img/view-grid.svg", alt="")
+        .main-filter__list 
+          span BESTSELLERS
+          img(class="main-filter__list-img" src="./assets/img/categories down arrow.svg", alt="")
+      .main-filter__blank
+      .main-filter__body
+        .filter-body__card
+          .filter-body__card-title Color
+          ul.filter-body__card-list
+            li
+              .filter-body__card-list_color.filter-body__card-list_black
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text 
+            li
+              .filter-body__card-list_color.filter-body__card-list_cyan
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text 
+            li
+              .filter-body__card-list_color.filter-body__card-list_green
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text 
+            li
+              .filter-body__card-list_color.filter-body__card-list_gray
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text 
+            li
+              .filter-body__card-list_color.filter-body__card-list_pink
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text 
+            li
+              .filter-body__card-list_color.filter-body__card-list_white
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text 
+            li
+              .filter-body__card-list_color.filter-body__card-list_blue
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text 
+        .filter-body__card
+          .filter-body__card-title size
+          ul.filter-body__card-list
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text XL
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text L
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text M
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text S
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text Xs
+        .filter-body__card
+          .filter-body__card-title brand
+          ul.filter-body__card-list
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text Ck
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text H&M
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text Kalles
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text Levi`s
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text Monki
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text Nike
+        .filter-body__card
+          .filter-body__card-title price
+          ul.filter-body__card-list
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text $1200+
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text $600-$1200
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text $300-$600
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text $150-$300
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text $50-$150
+            li
+              label.checkbox
+                input(class="checkbox__input" type="checkbox")
+                span.checkbox__box
+                span.checkbox__text $7-$50
+  .container
+    .item-grid 
+      .item-card 
+        img(class="item-card__img" src="./assets/img/blue pants.jpg", alt="")
+        .item-card__content
+          .item-card__name Women's tracksuit Q109
+          .item-card__info 
+            .item-card__info-price $ 38.00
+            img(class="item-card__info-rate" src="./assets/img/star.jpg", alt="")
+          .item-card__similar 
+            img(class="item-card__similar-img" src="./assets/img/small pants 1.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 2.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 3.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 4.jpg", alt="alt")
+          .item-card__size 
+            img(class="item-card__size-img" src="./assets/img/xs.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/s.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/m.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/l.jpg", alt="alt")
+          .item-card__shop
+            a(class="item-card__shop_btn" href="#") ADD TO CART
+            .item-card__shop-img 
+              img(src="./assets/img/heart 1.svg", alt="")
+              img(src="./assets/img/scale 1.svg", alt="")
+      .item-card 
+        img(class="item-card__img" src="./assets/img/t-shirt 1.jpg", alt="")
+        .item-card__content
+          .item-card__name Cluse La Boheme Rose Gold
+          .item-card__info 
+            .item-card__info-price__new
+              .item-card__info-price $ 30.00
+              .item-card__info-price__old 
+                del
+                  | $ 60.00
+            img(class="item-card__info-rate" src="./assets/img/star.jpg", alt="")
+          .item-card__similar 
+            img(class="item-card__similar-img" src="./assets/img/small pants 1.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 2.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 3.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 4.jpg", alt="alt")
+          .item-card__size 
+            img(class="item-card__size-img" src="./assets/img/xs.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/s.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/m.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/l.jpg", alt="alt")
+          .item-card__shop
+            a(class="item-card__shop_btn" href="#") ADD TO CART
+            .item-card__shop-img 
+              img(src="./assets/img/heart 1.svg", alt="")
+              img(src="./assets/img/scale 1.svg", alt="")
+        .item-card__sale -50%    
+      .item-card 
+        img(class="item-card__img" src="./assets/img/t-shirt 2.jpg", alt="")
+        .item-card__content
+          .item-card__name Mercury Tee 
+          .item-card__info 
+            .item-card__info-price $ 54.00
+            img(class="item-card__info-rate" src="./assets/img/star.jpg", alt="")
+          .item-card__similar 
+            img(class="item-card__similar-img" src="./assets/img/small pants 1.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 2.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 3.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 4.jpg", alt="alt")
+          .item-card__size 
+            img(class="item-card__size-img" src="./assets/img/xs.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/s.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/m.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/l.jpg", alt="alt")
+          .item-card__shop
+            a(class="item-card__shop_btn" href="#") ADD TO CART
+            .item-card__shop-img 
+              img(src="./assets/img/heart 1.svg", alt="")
+              img(src="./assets/img/scale 1.svg", alt="")
+      .item-card 
+        img(class="item-card__img" src="./assets/img/pants 2.jpg", alt="")
+        .item-card__content
+          .item-card__name Skin Sweatpans
+          .item-card__info 
+            .item-card__info-price $ 21.00
+            img(class="item-card__info-rate" src="./assets/img/star.jpg", alt="")
+          .item-card__similar 
+            img(class="item-card__similar-img" src="./assets/img/small pants 1.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 2.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 3.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 4.jpg", alt="alt")
+          .item-card__size 
+            img(class="item-card__size-img" src="./assets/img/xs.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/s.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/m.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/l.jpg", alt="alt")
+          .item-card__shop
+            a(class="item-card__shop_btn" href="#") ADD TO CART
+            .item-card__shop-img 
+              img(src="./assets/img/heart 1.svg", alt="")
+              img(src="./assets/img/scale 1.svg", alt="")
+      .item-card 
+        img(class="item-card__img" src="./assets/img/t-shirt 3.jpg", alt="")
+        .item-card__content
+          .item-card__name Short Sleeved Hoodie
+          .item-card__info 
+            .item-card__info-price $ 32.00
+            img(class="item-card__info-rate" src="./assets/img/star.jpg", alt="")
+          .item-card__similar 
+            img(class="item-card__similar-img" src="./assets/img/small pants 1.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 2.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 3.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 4.jpg", alt="alt")
+          .item-card__size 
+            img(class="item-card__size-img" src="./assets/img/xs.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/s.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/m.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/l.jpg", alt="alt")
+          .item-card__shop
+            a(class="item-card__shop_btn" href="#") ADD TO CART
+            .item-card__shop-img 
+              img(src="./assets/img/heart 1.svg", alt="")
+              img(src="./assets/img/scale 1.svg", alt="")
+      .item-card 
+        img(class="item-card__img" src="./assets/img/pants 3.jpg", alt="")
+        .item-card__content
+          .item-card__name Ridley High Waist
+          .item-card__info 
+            .item-card__info-price $ 68.00
+            img(class="item-card__info-rate" src="./assets/img/star.jpg", alt="")
+          .item-card__similar 
+            img(class="item-card__similar-img" src="./assets/img/small pants 1.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 2.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 3.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 4.jpg", alt="alt")
+          .item-card__size 
+            img(class="item-card__size-img" src="./assets/img/xs.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/s.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/m.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/l.jpg", alt="alt")
+          .item-card__shop
+            a(class="item-card__shop_btn" href="#") ADD TO CART
+            .item-card__shop-img 
+              img(src="./assets/img/heart 1.svg", alt="")
+              img(src="./assets/img/scale 1.svg", alt="")
+      .item-card 
+        img(class="item-card__img" src="./assets/img/pants 4.jpg", alt="")
+        .item-card__content
+          .item-card__name Cream women pants
+          .item-card__info 
+            .item-card__info-price $ 45.00
+            img(class="item-card__info-rate" src="./assets/img/star.jpg", alt="")
+          .item-card__similar 
+            img(class="item-card__similar-img" src="./assets/img/small pants 1.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 2.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 3.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 4.jpg", alt="alt")
+          .item-card__size 
+            img(class="item-card__size-img" src="./assets/img/xs.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/s.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/m.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/l.jpg", alt="alt")
+          .item-card__shop
+            a(class="item-card__shop_btn" href="#") ADD TO CART
+            .item-card__shop-img 
+              img(src="./assets/img/heart 1.svg", alt="")
+              img(src="./assets/img/scale 1.svg", alt="")
+      .item-card 
+        img(class="item-card__img" src="./assets/img/t-shirt 4.jpg", alt="")
+        .item-card__content
+          .item-card__name Simple Skin T-shirt
+          .item-card__info 
+            .item-card__info-price $ 20.00
+            img(class="item-card__info-rate" src="./assets/img/star.jpg", alt="")
+          .item-card__similar 
+            img(class="item-card__similar-img" src="./assets/img/small pants 1.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 2.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 3.jpg", alt="alt")
+            img(class="item-card__similar-img" src="./assets/img/small pants 4.jpg", alt="alt")
+          .item-card__size 
+            img(class="item-card__size-img" src="./assets/img/xs.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/s.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/m.jpg", alt="alt")
+            img(class="item-card__size-img" src="./assets/img/l.jpg", alt="alt")
+          .item-card__shop
+            a(class="item-card__shop_btn" href="#") ADD TO CART
+            .item-card__shop-img 
+              img(src="./assets/img/heart 1.svg", alt="")
+              img(src="./assets/img/scale 1.svg", alt="")
+    .section-loader
+      .section-loader__gif
+        .section-loader__square
+        .section-loader__square
+        .section-loader__square
+        .section-loader__square
+  
+    

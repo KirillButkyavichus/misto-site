@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "parcel ./src/*.pug --no-cache"
+    "dev": "parcel ./src/*.pug --no-cache",
+    "build": "parcel build ./src/*.pug --out-dir ./build --no-cache"
   },
   "keywords": [],
   "author": "",

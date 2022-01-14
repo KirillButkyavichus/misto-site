@@ -77,3 +77,223 @@ footer.footer
           a(href="#")
             img(class="footer-bottom__img" src="./assets/img/pay.svg")
         .footer-bottom__designed Designed by Oleh Chabanov
+  .modal#modal-search
+    .modal__body
+      .modal__card
+        .modal__card-header
+          h2.modal__card-header_title Localization
+          img(class="modal__card-header_close" src="./assets/img/x 1.svg")
+        .modal__card-body
+          h3.localization-title Language
+          ul.localization-list
+            li
+              label.radio
+                input.radio__input(name="choice" type="radio" checked)
+                span.radio__box
+                span.radio__text English
+            li
+              label.radio
+                input.radio__input(name="choice" type="radio")
+                span.radio__box
+                span.radio__text Українська
+            li
+              label.radio
+                input.radio__input(name="choice" type="radio")
+                span.radio__box
+                span.radio__text Français
+            li
+              label.radio
+                input.radio__input(name="choice" type="radio")
+                span.radio__box
+                span.radio__text Deutsche
+            li
+              label.radio
+                input.radio__input(name="choice" type="radio")
+                span.radio__box
+                span.radio__text Español
+            li
+              label.radio
+                input.radio__input(name="choice" type="radio")
+                span.radio__box
+                span.radio__text Polskie
+            li
+              label.radio
+                input.radio__input(name="choice" type="radio")
+                span.radio__box
+                span.radio__text Türkçe
+            li
+              label.radio
+                input.radio__input(name="choice" type="radio")
+                span.radio__box
+                span.radio__text 한국어
+          h3.localization-title Currency
+          ul.localization-list
+            li
+              label.radio
+                input.radio__input(name="currency" type="radio" checked)
+                span.radio__box
+                span.radio__text USD ( US Dollar )
+            li
+              label.radio
+                input.radio__input(name="currency" type="radio")
+                span.radio__box
+                span.radio__text UAH ( Ukraine Hryvnia )
+            li
+              label.radio
+                input.radio__input(name="currency" type="radio")
+                span.radio__box
+                span.radio__text EUR ( Euro )
+            li
+              label.radio
+                input.radio__input(name="currency" type="radio")
+                span.radio__box
+                span.radio__text PLN ( Polish Zloty )
+            li
+              label.radio
+                input.radio__input(name="currency" type="radio")
+                span.radio__box
+                span.radio__text TRY ( Turkish Lira )
+            li
+              label.radio
+                input.radio__input(name="currency" type="radio")
+                span.radio__box
+                span.radio__text KRW ( Korean Won )
+  .modal#modal-localization
+    .modal__body
+      .modal__card
+        .modal__card-header
+          h2.modal__card-header_title Search
+          img(class="modal__card-header_close" src="./assets/img/x 1.svg")
+        .modal__card-body
+          input(class="modal__input_input",type="text", placeholder ="All Categories")
+          .search__input
+            input(class="modal__input_input",type="text", placeholder ="What are you Looking for?")
+            img(class="search__input_img" src="./assets/img/searchSmall.svg")
+          .modal-border
+          .search-title Need some inspiration?
+          ul.search-list 
+            li
+              .search__card
+                img(class="search__card_img" src="./assets/img/Rectangle.jpg", alt="")
+                .search__card-wrapper
+                  .search__card-title Women's tracksuit Q109
+                  .search__card-price $379.99
+            li 
+              .search__card
+                img(class="search__card_img" src="./assets/img/Rectangle3.jpg", alt="")
+                .search__card-wrapper
+                  .search__card-title Mercury Tee
+                  .search__card-price $54.00
+            li 
+              .search__card
+                img(class="search__card_img" src="./assets/img/Rectangle7.jpg", alt="")
+                .search__card-wrapper
+                    .search__card-title Cluse La Boheme Rose Gold
+                    .search__card-price $30.00
+            li
+              .search__card
+                img(class="search__card_img" src="./assets/img/Rectangle.jpg", alt="")
+                .search__card-wrapper
+                  .search__card-title Women's tracksuit Q109
+                  .search__card-price $379.99
+            li 
+              .search__card
+                img(class="search__card_img" src="./assets/img/Rectangle3.jpg", alt="")
+                .search__card-wrapper
+                  .search__card-title Mercury Tee
+                  .search__card-price $54.00
+            li 
+              .search__card
+                img(class="search__card_img" src="./assets/img/Rectangle7.jpg", alt="")
+                .search__card-wrapper
+                    .search__card-title Cluse La Boheme Rose Gold
+                    .search__card-price $30.00
+            li
+              .search__card
+                img(class="search__card_img" src="./assets/img/Rectangle.jpg", alt="")
+                .search__card-wrapper
+                  .search__card-title Women's tracksuit Q109
+                  .search__card-price $379.99
+            li 
+              .search__card
+                img(class="search__card_img" src="./assets/img/Rectangle3.jpg", alt="")
+                .search__card-wrapper
+                  .search__card-title Mercury Tee
+                  .search__card-price $54.00
+            li 
+              .search__card
+                img(class="search__card_img" src="./assets/img/Rectangle7.jpg", alt="")
+                .search__card-wrapper
+                    .search__card-title Cluse La Boheme Rose Gold
+                    .search__card-price $30.00
+  .modal#modal-login
+    .modal__body
+      .modal__card
+        .modal__card-header
+          h2.modal__card-header_title Login
+          img(class="modal__card-header_close" src="./assets/img/x 1.svg")
+        .modal__card-body
+          .login__subtitle If you have an account with us, please log in.
+          .login__form
+            .login__form-wrapper 
+              .login__form-title email
+              input(class="modal__input_input",type="text", placeholder ="Enter your email")
+            .login__form-wrapper 
+              .login__form-text
+                .login__form-title password
+                .login__form-info Lost your password?
+              input(class="modal__input_input",type="text", placeholder ="Your password")
+          button.modal_btn Login 
+          .login__form-choice 
+            hr.login__form-border
+            .login__form-border-text or
+            hr.login__form-border
+          .login__form-social
+            a(href="https://www.facebook.com/") 
+              img( src="./assets/img/facebook.jpg", alt="")
+            a( href="https://www.google.ru/") 
+              img( src="./assets/img/google 1.jpg", alt="")
+            a(href="https://www.apple.com/ru/") 
+              img( src="./assets/img/apple.jpg", alt="")
+          .login__form-create 
+            .login__form-create_customer New Customer?
+            button.modal_btn-grey Create your account
+  .modal#modal-basket
+    .modal__body
+      .modal__card
+        .modal__card-header
+          h2.modal__card-header_title Shopping Cart
+          img(class="modal__card-header_close" src="./assets/img/x 1.svg")
+        .modal__card-body
+          .basket__card 
+            img(class="basket__card_img" src="./assets/img/bluePants.jpg", alt="")
+            .basket__card-wrapper
+              .basket__card-title Women's tracksuit Q109
+              .basket__card-info Blue,S
+              .basket__card-action
+                .basket__card-counter 
+                  img(class="basket__card-counter_operation" src="./assets/img/minus.svg", alt="")
+                  .basket__card-counter_number 1
+                  img(class="basket__card-counter_operation" src="./assets/img/plus.svg", alt="")
+                .basket__card-price $379.99
+                img(class="basket__card-basket" src="./assets/img/korzina.svg", alt="") 
+          .basket__card-border 
+          .basket__card 
+            img(class="basket__card_img" src="./assets/img/whiteShorts.jpg", alt="")
+            .basket__card-wrapper
+              .basket__card-title Mercury Tee
+              .basket__card-info White, S
+              .basket__card-action
+                .basket__card-counter 
+                  img(class="basket__card-counter_operation" src="./assets/img/minus.svg", alt="")
+                  input(class="basket__card-counter_number" type="text")
+                  img(class="basket__card-counter_operation" src="./assets/img/plus.svg", alt="")
+                .basket__card-price $54.00
+                img(class="basket__card-basket" src="./assets/img/korzina.svg", alt="") 
+          .basket__card-border 
+          .basket__card-footer
+            .basket__card-total 
+              .basket__card-total_text Total
+              .basket__card-total_price $433.99
+            button.modal_btn.basket__card_btn Check Out
+            button.modal_btn-grey View Cart
