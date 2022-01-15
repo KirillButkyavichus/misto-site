@@ -1,3 +1,5 @@
+import { Counter } from './counter';
+
 // Находим элемент с фильтром
 const filterWindow = document.querySelector('.main-filter__body');
 
@@ -40,3 +42,11 @@ function handleModalIconClick(e){
   modal.classList.add('modal_active');
   document.body.classList.add('hidden');
 };
+
+const counters = document.querySelectorAll('.js-counter');
+
+for (const counter of counters) {
+  new Counter(counter, {
+    initialValue: 5,
+  });
+}
