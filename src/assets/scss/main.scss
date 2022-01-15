@@ -12,8 +12,9 @@ body {
 
 .container {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1142px;
   margin: 0 auto;
+  padding: 0 16px;
 }
 
 .header-top {
@@ -56,10 +57,14 @@ body {
 }
 
 .header-bottom {
-  display: flex;
-  justify-content: space-between;
-  padding:17px 0;
-  align-items: center;
+  position: relative;
+  &__container  {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    align-items: center;
+    }
   &__nav {
     cursor: pointer;
     display: flex;
@@ -293,6 +298,87 @@ body {
   }
 }
 
+.menu {
+  &__modal {
+    padding: 32px 0;
+    display: none;
+    z-index:10 ;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border-top: 4px solid #121212;
+    background-color: #ffffff;
+    &_active{
+      display: block;
+    }
+    &-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+    &-nav {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+    }
+    &-card  {
+      &-title {
+        font-weight: 600;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+      &-list {
+        margin-top: 12px;
+        font-size: 13px;
+        line-height: 34px;
+        font-weight: 400;
+        opacity: 0.8;
+      }
+    }
+    &-show {
+      &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
+      &_swipe {
+        display: flex;
+        &-left {
+          margin-right: 12px;
+          cursor: pointer;
+        }
+        &-right {
+          cursor: pointer;
+        }
+      }
+      &_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+      }
+      &_card {
+        cursor: pointer;
+        &_img {
+          margin-bottom: 4px;
+        }
+        &-name {
+          font-weight: 500;
+          font-size: 11px;
+          line-height: 18px;
+          opacity: 0.6;
+          margin-bottom: 4px;
+        }
+        &-price {
+          font-size: 12px;
+          line-height: 13px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
+
 .basket {
   &__card {
     display: flex;
@@ -519,6 +605,7 @@ body {
     font-size: 12px;
     font-weight: 400;
     line-height: 34px;
+    opacity: 0.8;
     & a {
       display: flex;
     } 
