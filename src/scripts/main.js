@@ -40,3 +40,20 @@ function handleModalIconClick(e){
   modal.classList.add('modal_active');
   document.body.classList.add('hidden');
 };
+
+const menuModal = document.querySelectorAll(".menu-modal");
+const itemsMenu = document.querySelector(".header-bottom__nav");
+const itemsMenuChildren = itemsMenu.children;
+
+for(const itemMenuChildren of itemsMenuChildren) {
+  const hiddenMenuModal = itemMenuChildren.querySelector (".hidden-menu__modal");
+  if(!hiddenMenuModal){
+    continue;
+  }
+    hiddenMenuModal.addEventListener('click',menuClick);
+}
+
+function menuClick(e) {
+  
+  e.currentTarget.nextSibling.classList.toggle('menu__modal_active');
+}

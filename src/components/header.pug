@@ -23,89 +23,97 @@ header.header
             img(src="./assets/img/pinterest .svg", alt="")
   .header-bottom
     .container.header-bottom__container
-      img(class="logo" src="./assets/img/logo .svg", alt="alt")
+      a(href="/index.pug") 
+        img(class="logo" src="./assets/img/logo .svg", alt="alt")  
       ul.header-bottom__nav
-        li About Us
         li 
-          span Women
-          .menu__modal  
-            .container.menu__modal-container 
-              .menu__modal-nav
-                .menu__modal-card 
-                  h3.menu__modal-card-title TOPS
-                  ul.menu__modal-card-list
-                    li 
-                      a(href="#") link Awesome
-                    li 
-                      a(href="#") Beachwear
-                    li 
-                      a(href="#") Beige
-                    li 
-                      a(href="#") Cool New
-                    li 
-                      a(href="#") Dress
-                    li 
-                      a(href="#") Gap
-                    li 
-                      a(href="#") Guess
-                .menu__modal-card 
-                  h3.menu__modal-card-title BOTTOMS
-                  ul.menu__modal-card-list
-                    li 
-                      a(href="#") Jeans
-                    li 
-                      a(href="#") Lacoste
-                    li 
-                      a(href="#") Levi's
-                    li 
-                      a(href="#") Model
-                    li 
-                      a(href="#") Nice Featured
-                    li 
-                      a(href="#") Polo
-                    li 
-                      a(href="#") Pullover
-                .menu__modal-card 
-                  h3.menu__modal-card-title ACCESSORIES
-                  ul.menu__modal-card-list
-                    li 
-                      a(href="#") Scarf Sale 13%
-                    li 
-                      a(href="#") Shirt
-                    li 
-                      a(href="#") Shoes
-                    li 
-                      a(href="#") Shorts
-                    li 
-                      a(href="#") Summer
-                    li 
-                      a(href="#") Sunglasses
-                    li 
-                      a(href="#") Vintage
-              .menu__modal-show
-                .menu__modal-show_wrapper
-                  h3.menu__modal-card-title BESTSELLERS
-                  .menu__modal-show_swipe
-                    img(class="menu__modal-show_swipe-left" src="./assets/img/leftArray.svg", alt="")
-                    img(class="menu__modal-show_swipe-right" src="./assets/img/rightArray.svg", alt="")
-                .menu__modal-show_grid
-                  .menu__modal-show_card
-                    img(class="menu__modal-show_card_img" src="./assets/img/flower.jpg", alt="")  
-                    .menu__modal-show_card-name  Women's tracksuit Q109
-                    .menu__modal-show_card-price $ 28.99
-                  .menu__modal-show_card
-                    img(class="menu__modal-show_card_img" src="./assets/img/blueSundress.jpg", alt="")  
-                    .menu__modal-show_card-name  Cluse La Boheme Rose
-                    .menu__modal-show_card-price $ 18.48
-                  .menu__modal-show_card
-                    img(class="menu__modal-show_card_img" src="./assets/img/blackSundress.jpg", alt="")  
-                    .menu__modal-show_card-name  Short Sleeve Dress
-                    .menu__modal-show_card-price $ 139.98
-        li Men
-        li Beauty 
-        li Accessories
-        li Blog 
-        li Contact
+          a(href="/categories.pug") About Us
+        li 
+          a(href="/categories.pug") Women
+          //- span.hidden-menu__modal Women
+          //- .menu__modal  
+          //-   .container.menu__modal-container 
+          //-     .menu__modal-nav
+          //-       .menu__modal-card 
+          //-         h3.menu__modal-card-title TOPS
+          //-         ul.menu__modal-card-list
+          //-           li 
+          //-             a(href="#") link Awesome
+          //-           li 
+          //-             a(href="#") Beachwear
+          //-           li 
+          //-             a(href="#") Beige
+          //-           li 
+          //-             a(href="#") Cool New
+          //-           li 
+          //-             a(href="#") Dress
+          //-           li 
+          //-             a(href="#") Gap
+          //-           li 
+          //-             a(href="#") Guess
+          //-       .menu__modal-card 
+          //-         h3.menu__modal-card-title BOTTOMS
+          //-         ul.menu__modal-card-list
+          //-           li 
+          //-             a(href="#") Jeans
+          //-           li 
+          //-             a(href="#") Lacoste
+          //-           li 
+          //-             a(href="#") Levi's
+          //-           li 
+          //-             a(href="#") Model
+          //-           li 
+          //-             a(href="#") Nice Featured
+          //-           li 
+          //-             a(href="#") Polo
+          //-           li 
+          //-             a(href="#") Pullover
+          //-       .menu__modal-card 
+          //-         h3.menu__modal-card-title ACCESSORIES
+          //-         ul.menu__modal-card-list
+          //-           li 
+          //-             a(href="#") Scarf Sale 13%
+          //-           li 
+          //-             a(href="#") Shirt
+          //-           li 
+          //-             a(href="#") Shoes
+          //-           li 
+          //-             a(href="#") Shorts
+          //-           li 
+          //-             a(href="#") Summer
+          //-           li 
+          //-             a(href="#") Sunglasses
+          //-           li 
+          //-             a(href="#") Vintage
+          //-     .menu__modal-show
+          //-       .menu__modal-show_wrapper
+          //-         h3.menu__modal-card-title BESTSELLERS
+          //-         .menu__modal-show_swipe
+          //-           img(class="menu__modal-show_swipe-left" src="./assets/img/leftArray.svg", alt="")
+          //-           img(class="menu__modal-show_swipe-right" src="./assets/img/rightArray.svg", alt="")
+          //-       .menu__modal-show_grid
+          //-         .menu__modal-show_card
+          //-           img(class="menu__modal-show_card_img" src="./assets/img/flower.jpg", alt="")  
+          //-           .menu__modal-show_card-name  Women's tracksuit Q109
+          //-           .menu__modal-show_card-price $ 28.99
+          //-         .menu__modal-show_card
+          //-           img(class="menu__modal-show_card_img" src="./assets/img/blueSundress.jpg", alt="")  
+          //-           .menu__modal-show_card-name  Cluse La Boheme Rose
+          //-           .menu__modal-show_card-price $ 18.48
+          //-         .menu__modal-show_card
+          //-           img(class="menu__modal-show_card_img" src="./assets/img/blackSundress.jpg", alt="")  
+          //-           .menu__modal-show_card-name  Short Sleeve Dress
+          //-           .menu__modal-show_card-price $ 139.98
+        li 
+          a(href="/categories.pug") Men
+        li 
+          a(href="/categories.pug") Beauty 
+        li 
+          a(href="/categories.pug") Accessories
+        li 
+          a(href="/categories.pug") Blog 
+        li 
+          a(href="/categories.pug") Contact
       .header-bottom__icons 
         img(class="js-modal-btn" data-modal="#modal-search"  src="./assets/img/search.svg", alt="")
         img(class="js-modal-btn" data-modal="#modal-localization" src="./assets/img/globe .svg", alt="") 
